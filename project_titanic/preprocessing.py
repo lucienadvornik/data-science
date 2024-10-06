@@ -20,3 +20,15 @@ train['Sex'] = train['Sex'].map({'male': 0, 'female': 1})
 train['Embarked'].fillna('S', inplace=True)  # Fill missing values in 'Embarked'
 train['Embarked'] = train['Embarked'].map({'C': 0, 'Q': 1, 'S': 2})
 
+
+#### 3) FEATURE SELECTION ####
+# Select features and target variable
+X = train[['Pclass', 'Sex', 'Age', 'Fare']]  # Features used for training
+y = train['Survived']                         # Target variable
+
+
+#### 4) TRAIN-TEST SPLIT ###
+from sklearn.model_selection import train_test_split
+
+# Split the data into training and testing sets (80% train, 20% test)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
