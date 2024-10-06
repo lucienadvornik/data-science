@@ -1,4 +1,4 @@
-#### 5) MODEL TRAINING ####
+#### MODEL TRAINING ####
 
 ## Results
 # Accuracy:
