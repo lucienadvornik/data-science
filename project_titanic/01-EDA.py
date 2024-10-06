@@ -3,8 +3,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Loading training and test data
-train = pd.read_csv('data/train.csv')  # Check the file path
-test = pd.read_csv('data/test.csv')    # Check the file path
+train = pd.read_csv('project_titanic/data/train.csv')  # Check the file path
+test = pd.read_csv('project_titanic/data/test.csv')    # Check the file path
 
 # Viewing the first 5 rows of the training data
 print(train.head())
