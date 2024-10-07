@@ -35,3 +35,15 @@ plt.show()                                # Show the plot
 sns.countplot(x='Pclass', hue='Survived', data=train)
 plt.title('Survival by Passenger Class')  # Title of the plot
 plt.show()                                # Show the plot
+
+# % of women who survived
+women = train.loc[train.Sex == 'female']["Survived"]
+rate_women = sum(women)/len(women)
+print("% of women who survived:", rate_women)
+# Result: % of women who survived: 0.7420382165605095
+
+# % of men who survived
+men = train.loc[train.Sex == 'male']["Survived"]
+rate_men = sum(men)/len(men)
+print("% of men who survived:", rate_men)
+# Result: % of men who survived: 0.18890814558058924 
