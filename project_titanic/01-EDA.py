@@ -11,7 +11,7 @@ print(train.head())
 print(test.head())
 
 
-#### 1) EXPLORATORY DATA ANALYSIS ####
+#### EXPLORATORY DATA ANALYSIS ####
 # Basic statistics
 print(train.describe())
 

@@ -2,7 +2,7 @@
 #import seaborn as sns
 #import matplotlib.pyplot as plt
 
-#### 2) DATA PREPROCESSING ####
+#### DATA PREPROCESSING ####
 # Check for missing values 
 print(train.isnull().sum())
 
@@ -21,13 +21,13 @@ train['Embarked'].fillna('S', inplace=True)  # Fill missing values in 'Embarked'
 train['Embarked'] = train['Embarked'].map({'C': 0, 'Q': 1, 'S': 2})
 
 
-#### 3) FEATURE SELECTION ####
+#### FEATURE SELECTION ####
 # Select features and target variable
 X = train[['Pclass', 'Sex', 'Age', 'Fare']]  # Features used for training
 y = train['Survived']                         # Target variable
 
 
-#### 4) TRAIN-TEST SPLIT ###
+#### TRAIN-TEST SPLIT ###
 from sklearn.model_selection import train_test_split
 
 # Split the data into training and testing sets (80% train, 20% test)
