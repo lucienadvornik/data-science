@@ -9,3 +9,9 @@ for dirname, _, filenames in os.walk('/kaggle/input/womens-ecommerce-clothing-re
 
 train_data = pd.read_csv('/kaggle/input/womens-ecommerce-clothing-reviews/Womens Clothing E-Commerce Reviews.csv')
 train_data.head()
+
+# Inspection of first rows
+print(df.head())
+
+# Basic information about the dataset
+print(df.info())
